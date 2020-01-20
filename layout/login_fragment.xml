@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <GridLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <!--Column 0-->
+
+        <TextView
+            android:layout_column="0"
+            android:layout_row="0"
+            android:text="@string/first_name"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"/>
+
+        <TextView
+            android:layout_column="0"
+            android:layout_row="1"
+            android:text="@string/last_name"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"/>
+
+        <TextView
+            android:layout_column="0"
+            android:layout_row="2"
+            android:text="@string/alias"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"/>
+
+        <TextView
+            android:layout_column="0"
+            android:layout_row="3"
+            android:text="@string/password"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"/>
+
+        <!--Column 1-->
+        <EditText
+            android:layout_column="1"
+            android:layout_row="0"
+            android:layout_width="190dp"
+            android:id="@+id/firstNameInput"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"/>
+
+        <EditText
+            android:layout_column="1"
+            android:layout_row="1"
+            android:layout_width="190dp"
+            android:id="@+id/lastNameInput"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"/>
+
+        <EditText
+            android:layout_column="1"
+            android:layout_row="2"
+            android:layout_width="190dp"
+            android:id="@+id/userNameInput"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"/>
+
+        <EditText
+            android:layout_column="1"
+            android:layout_row="3"
+            android:layout_width="190dp"
+            android:id="@+id/passWordInput"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            android:inputType="textPassword"/>
+
+    </GridLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center">
+
+<!--        <TextView-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:id="@+id/upload_image_text"-->
+<!--            android:textAppearance="@style/TextAppearance.AppCompat.Large"-->
+<!--            android:text="@string/profile_pic_url"/>-->
+
+<!--        <EditText-->
+<!--            android:layout_height="50dp"-->
+<!--            android:layout_width="100dp"-->
+<!--            android:id="@+id/profile_image_url_input"-->
+<!--            android:textAppearance="@style/TextAppearance.AppCompat.Large"-->
+<!--            android:maxWidth="100dp"-->
+<!--            android:adjustViewBounds="true"/>-->
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/upload_image_button"
+            android:adjustViewBounds="true"
+            android:text="@string/upload_profile_pic_button"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:gravity="center"
+        android:layout_margin="10dp">
+
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:id="@+id/profile_image_preview" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_gravity="center"
+        android:padding="15dp">
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/loginButton"
+            android:text="@string/loginButton"
+            android:layout_margin="5dp"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/registerButton"
+            android:text="@string/registerButton"
+            android:layout_margin="5dp"/>
+
+    </LinearLayout>
+
+
+</LinearLayout>
